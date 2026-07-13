@@ -1,0 +1,3 @@
+# No hardware is owned by drone_core (see drone_hal). Placeholder so the
+# 5-domain configuration hierarchy is present from Phase 1 onward.
+devices: {}

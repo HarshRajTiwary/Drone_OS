@@ -1,0 +1,16 @@
+# Safety thresholds used by health checks. See drone_core/health_checks.py.
+health:
+  cpu:
+    degraded_percent: 70.0
+    warn_percent: 85.0
+    critical_percent: 95.0
+  ram:
+    degraded_percent: 70.0
+    warn_percent: 85.0
+    critical_percent: 95.0
+  disk:
+    degraded_percent: 70.0
+    warn_percent: 85.0
+    critical_percent: 95.0
+  heartbeat:
+    stale_after_s: 5.0

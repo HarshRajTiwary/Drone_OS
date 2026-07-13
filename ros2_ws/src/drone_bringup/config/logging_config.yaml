@@ -1,0 +1,4 @@
+level: INFO
+file_logging:
+  enabled: false
+  path: /var/log/droneos/drone_core.log

@@ -1,0 +1,3 @@
+# Mission-specific defaults. No missions are registered by Phase 1;
+# this file is a placeholder for a later phase's mission plugins.
+missions: {}
