@@ -1,0 +1,8 @@
+string mission_name
+string config_yaml
+---
+bool success
+string message
+---
+float32 progress_percent
+string status_message
