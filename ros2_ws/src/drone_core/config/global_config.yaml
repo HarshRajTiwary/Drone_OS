@@ -1,0 +1,9 @@
+# Global platform defaults.
+diagnostics:
+  enabled: true
+  period_s: 1.0
+state_machine:
+  default_start_state: BOOTING
+timeouts:
+  boot_s: 30
+  service_call_s: 5
