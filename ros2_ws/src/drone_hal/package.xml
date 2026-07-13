@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>drone_hal</name>
+  <version>0.1.0</version>
+  <description>
+    DroneOS Hardware Abstraction Layer core: hardware manager, device
+    registry, driver loader, device discovery, and the generic hardware
+    driver/device contracts that drone_camera, drone_fc, drone_rangefinder,
+    and drone_optical_flow implement. Contains no device-specific protocol
+    code and no mission, flight-control, or image-processing logic.
+  </description>
+  <maintainer email="harishpatel1005@gmail.com">DroneOS Platform Team</maintainer>
+  <license>Apache-2.0</license>
+
+  <depend>rclpy</depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>drone_interfaces</depend>
+  <depend>python3-yaml</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+  <test_depend>ros-jazzy-launch-testing</test_depend>
+  <test_depend>ros-jazzy-launch-testing-ros</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

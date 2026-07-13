@@ -1,0 +1,29 @@
+# DroneOS HAL device descriptor list.
+#
+# Each entry becomes a drone_hal.device.DeviceDescriptor. driver_class is a
+# "module.path:ClassName" reference resolved at runtime by DriverLoader, so
+# adding a new device here (once its driver package is installed) requires
+# no change to drone_hal itself.
+#
+# No devices are enabled by default: drone_camera, drone_fc,
+# drone_rangefinder, and drone_optical_flow (Phase 2 packages 2-5) do not
+# exist yet. Entries below are commented examples of the expected shape.
+
+devices: []
+
+# Example (uncomment once drone_rangefinder is implemented):
+# devices:
+#   - device_id: tfmini_s_down
+#     device_type: rangefinder
+#     bus: uart
+#     address: /dev/ttyAMA0
+#     driver_class: "drone_rangefinder.driver:TFMiniDriver"
+#     metadata:
+#       baudrate: "115200"
+#   - device_id: pmw3901_flow
+#     device_type: optical_flow
+#     bus: spi
+#     address: /dev/spidev0.0
+#     driver_class: "drone_optical_flow.driver:PMW3901Driver"
+#     metadata:
+#       rotation_deg: "0"
