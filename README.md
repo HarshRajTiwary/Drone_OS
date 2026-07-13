@@ -16,7 +16,7 @@ without modifying the core.
 | --- | --- | --- |
 | Phase 0 | Architecture, ADRs, interfaces, SRS, engineering standards | ✅ Complete |
 | Phase 1 | DroneOS Core (platform runtime) | 🟡 In progress — 1/6 packages |
-| Phase 2 | Hardware Abstraction Layer (HAL) | 🟡 In progress — 0/8 packages |
+| Phase 2 | Hardware Abstraction Layer (HAL) | 🟡 In progress — 1/8 packages |
 
 ### Phase 1 — DroneOS Core
 
@@ -33,7 +33,7 @@ without modifying the core.
 
 | # | Package | Responsibility | Status |
 | --- | --- | --- | --- |
-| 1 | `drone_hal` | Hardware manager, registry, driver loader, discovery, lifecycle, diagnostics, DI | 🟡 In progress |
+| 1 | `drone_hal` | Hardware manager, registry, driver loader, discovery, lifecycle, diagnostics, DI | ✅ Done |
 | 2 | `drone_camera` | Pi Camera Module driver (libcamera), frame acquisition, no processing | ⬜ Not started |
 | 3 | `drone_fc` | Pixhawk/ArduPilot connection, heartbeat/mode/vehicle/battery/RC telemetry (no arm/takeoff/mission) | ⬜ Not started |
 | 4 | `drone_rangefinder` | TFMini-S driver, distance measurement, filtering, calibration | ⬜ Not started |
